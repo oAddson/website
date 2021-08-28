@@ -1,0 +1,182 @@
+$PATH-UBUNTU: '../fonts/ubuntu/';
+$PATH-ROBOTO: '../fonts/roboto/';
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-Bold.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-Italic.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-BoldItalic.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-Light.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-LightItalic.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-Medium.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-MediumItalic.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url($PATH-UBUNTU + 'Ubuntu-Regular.woff2') format('woff2'),
+        url($PATH-UBUNTU + 'Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Black.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-BlackItalic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Bold.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-BoldItalic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Light.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Italic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Medium.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-LightItalic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-MediumItalic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Regular.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-Thin.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url($PATH-ROBOTO + 'Roboto-ThinItalic.woff2') format('woff2'),
+        url($PATH-ROBOTO + 'Roboto-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}

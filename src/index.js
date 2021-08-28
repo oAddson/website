@@ -1,4 +1,4 @@
-import styles from './scss/theme.scss'
+import styles from './scss/app.scss'
 
 (() => {
     const  test = 'hello world';
