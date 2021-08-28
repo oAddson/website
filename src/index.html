@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,9 @@
     <title>Novo Projeto</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#">
+    <header class="header">
+        <div class="header_logo">
+            <a class="header_logo-link" href="#">
                 <svg width="35" height="50" viewBox="0 0 1280 1061.48" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                     <linearGradient id="d" x1="1129.8" x2="211.21" y1="1094.6" y2="219.72" gradientUnits="userSpaceOnUse">
@@ -26,30 +26,176 @@
                     <stop stop-color="#ff6366" offset="1"/>
                     </linearGradient>
                     </defs>
-                    <title>logo3</title>
+                    <title>@OAddson</title>
                     <polygon points="1280 1061.5 909.96 1061.5 42.46 133.6" fill="url(#d)"/>
                     <path transform="translate(0 -109.26)" d="M640,109.26h0L0,1170.74H363.91L640,109.26,910,1170.74h370Z" fill="url(#c)"/>
                     </svg> 
             </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navigation">
+            <ul class="navigation_list">
+                <li class="navigation_list-item"><a class="navigation_link" href="#home">Home</a></li>
+                <li class="navigation_list-item"><a class="navigation_link" href="#about">About</a></li>
+                <li class="navigation_list-item"><a class="navigation_link" href="#skills">Skills</a></li>
+                <li class="navigation_list-item"><a class="navigation_link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>New Project</h1>
-        <p>That's your new project</p>
-    </main>
-    <footer>
-        <address>
-            <div>
-                Created by <a target="_blank" href="https://github.com/oAddson">Addson Azerodo Coutinho</a> ❤️ 
+    <main class="container">
+        <section class="section -home" id="home">
+            <div class="half_container">
+                <h1 class="heading -main" >Olá, meu nome é Addson.
+                    Eu sou frontend Dev.
+                </h1>
+                <a class="button" href="mailto:addsoncoutinho@hotmail.com">Contrate me!</a>
             </div>
-        </address>
+            <div class="half_container">
+                <div class="image">
+                    Image
+                </div>
+            </div>
+        </section>
+        <section class="section -about" id="about">
+            <div class="half_container">
+                <h2 class="heading" >Lorem Ipsum dummy</h2>
+                <p class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <ol>
+                    <li><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum urna turpis, at aliquet sapien aliquam at.
+                    </p></li>
+                    <li><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum urna turpis, at aliquet sapien aliquam at.
+                    </p></li>
+                    <li><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum urna turpis, at aliquet sapien aliquam at.
+                    </p></li>
+                    <li><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum urna turpis, at aliquet sapien aliquam at.
+                    </p></li>
+                    <li><p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum urna turpis, at aliquet sapien aliquam at.
+                    </p></li>
+                </ol>
+            </div>
+            <div class="half_container">
+                <div class="image">
+                    Image
+                </div>
+            </div>
+        </section>
+        <section class="section -skills" id="skills">
+            <h2 class="heading">Technologies</h2>
+            <p class="text"></p>
+            <div class="grid">
+                <ul class="grid_list">
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                    <li class="grid_list-item">
+                        <div>
+                            <img src="./images/placeholder-image.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section -contact" id="contact">
+            <div class="half_container">
+                <h2 class="heading">Contact</h2>
+                <p class="text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <div class="contacts">
+                    <ul class="contacts_list">
+                        <li class="contacts_list-item"><a class="contacts_link" href="">GitHub</a></li>
+                        <li class="contacts_list-item"><a class="contacts_link" href="">Twitter</a></li>
+                        <li class="contacts_list-item"><a class="contacts_link" href="">Linkedin</a></li>
+                        <li class="contacts_list-item"><a class="contacts_link" href="">Medium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="half_container">
+                <form class="form">
+                    <fieldset>
+                        <legend>Entre em contato</legend>
+                        <div class="input-group">
+                            <label>E-mail <br><input type="email"></label>
+                        </div>
+                        <div class="input-group">
+                            <label>Mensagem <br>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </label>
+                        </div>
+                        <div class="input-group">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="half_container">
+            <div class="footer_logo">
+                <img src="./images/placeholder-image.png" alt="Addson Coutinho">
+            </div>
+            <div class="footer_text">
+                <h4 class="footer_text-title">
+                    About
+                </h4>
+                <p class="footer_text-paragraph">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries.
+                </p>
+            </div>
+        </div>
+        <div class="half_container">
+            <div class="footer_menu">
+                <ul class="navigation_list -footer">
+                    <li class="navigation_list-item"><a class="navigation_link" href="#home">Home</a></li>
+                    <li class="navigation_list-item"><a class="navigation_link" href="#about">About</a></li>
+                    <li class="navigation_list-item"><a class="navigation_link" href="#skills">Skills</a></li>
+                    <li class="navigation_list-item"><a class="navigation_link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <address>
+                <a href="mailto:addsoncoutinho@hotmail.com">E-mail</a>
+                Endereços e endereços <br>
+                Endereços e endereços <br>
+                Endereços e endereços <br>
+                Endereços e endereços <br>
+                
+            </address>
+        </div>
+        Created by <a target="_blank" href="https://github.com/oAddson">Addson Azerodo Coutinho</a> ❤️ 
     </footer>
 </body>
 </html>
