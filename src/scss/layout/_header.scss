@@ -1,6 +1,11 @@
+@use '../abstract/' as *;
+
 .header {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    background-color: $background-color-night;
+    min-height: 75px;
+    z-index: 1;
     &_logo {
         display: flex;
         justify-content: center;

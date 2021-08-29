@@ -1,0 +1,25 @@
+@use '../abstract/' as *;
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    &_half {
+        @include flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+    &.-about {
+        & .section_group {
+            margin: 0 10px;
+        }
+        & .heading {
+            margin-top: -100px;
+            margin-bottom: 20px;
+        }
+    }
+    &.-skills {
+        grid-template-columns: 1fr;
+    }
+}

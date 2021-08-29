@@ -1,4 +1,15 @@
-@import './base/typography';
-@import './base/reset';
-@import './layout/header';
-@import './layout/navigation';
+// Base
+@use './base/reset';
+@use './base/typography';
+
+// Compenents
+@use './components/heading';
+@use './components/button';
+@use './components/list';
+@use './components/grid';
+
+// Layout
+@use './layout/navigation';
+@use './layout/header';
+@use './layout/section';
+@use './layout/container';

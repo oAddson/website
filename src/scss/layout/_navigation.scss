@@ -1,3 +1,5 @@
+@use '../abstract/variables' as *;
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -21,5 +23,6 @@
         }
         letter-spacing: 1.5px;
         padding: 15px 70px;
+        color: $font-color-night;
     }
 }
