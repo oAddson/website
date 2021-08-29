@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex: 1 0 100%;
+        &-item {
+            flex: 1 0;
+            text-align: center;
+            margin-left: -10.4%;
+        }
+    }
+    &_link {
+        text-decoration: none;
+        font: {
+            weight: 600;
+            size: 16px
+        }
+        letter-spacing: 1.5px;
+        padding: 15px 70px;
+    }
+}

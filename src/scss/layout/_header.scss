@@ -1,0 +1,12 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    &_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-link {
+            padding: 10px 28px;
+        }
+    }
+}

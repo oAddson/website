@@ -1,7 +1,4 @@
 @import './base/typography';
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import './base/reset';
+@import './layout/header';
+@import './layout/navigation';
