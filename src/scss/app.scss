@@ -3,10 +3,12 @@
 @use './base/typography';
 
 // Compenents
-@use './components/heading';
 @use './components/button';
-@use './components/list';
+@use './components/form';
 @use './components/grid';
+@use './components/heading';
+@use './components/list';
+@use './components/text';
 
 // Layout
 @use './layout/navigation';

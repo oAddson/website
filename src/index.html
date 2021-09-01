@@ -29,7 +29,7 @@
                     <title>@OAddson</title>
                     <polygon points="1280 1061.5 909.96 1061.5 42.46 133.6" fill="url(#d)"/>
                     <path transform="translate(0 -109.26)" d="M640,109.26h0L0,1170.74H363.91L640,109.26,910,1170.74h370Z" fill="url(#c)"/>
-                    </svg> 
+                </svg> 
             </a>
         </div>
         <nav class="navigation">
@@ -44,7 +44,7 @@
     <main class="container">
         <section class="section -home" id="home">
             <div class="section_half">
-                <div class="group">
+                <div class="section_group">
                     <h1 class="heading -main" >Olá, meu nome é Addson.
                         Eu sou frontend Dev.
                     </h1>
@@ -52,12 +52,12 @@
                 </div>
             </div>
             <div class="section_half">
-                <img src="./images/placeholder-image.png" alt="">
+                <img src="./images/planets-mac.svg" alt="">
             </div>
         </section>
         <section class="section -about" id="about">
             <div class="section_half">
-                <img src="./images/placeholder-image.png" alt="">
+                <img src="./images/planets.svg" alt="">
             </div>
             <div class="section_half">
                 <div class="section_group">
@@ -89,61 +89,69 @@
             </div>
         </section>
         <section class="section -skills" id="skills">
-            <h2 class="heading">Technologies</h2>
-            <p class="text"></p>
-            
-            <ul class="grid">
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-                <li class="grid_item">
-                    <img src="./images/placeholder-image.png" alt="">
-                </li>
-            </ul>
-
-        </section>
-        <section class="section -contact" id="contact">
-            <div class="section_half">
-                <h2 class="heading">Contact</h2>
+            <div class="section_group">
+                <h2 class="heading">Technologies</h2>
                 <p class="text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
-                <div class="contacts">
-                    <ul class="contacts_list">
-                        <li class="contacts_list-item"><a class="contacts_link" href="">GitHub</a></li>
-                        <li class="contacts_list-item"><a class="contacts_link" href="">Twitter</a></li>
-                        <li class="contacts_list-item"><a class="contacts_link" href="">Linkedin</a></li>
-                        <li class="contacts_list-item"><a class="contacts_link" href="">Medium</a></li>
-                    </ul>
+                <ul class="grid">
+                    <li class="grid_item">
+                        <img src="./images/javascript.svg" alt="">
+                    </li>
+                    <li class="grid_item">
+                        <img src="./images/html5.svg" alt="">
+                    </li>
+                    <li class="grid_item">
+                        <img src="./images/css3.svg" alt="">
+                    </li>
+                    <li class="grid_item">
+                        <img src="./images/bootstrap4.svg" alt="">
+                    </li>
+                    <li class="grid_item">
+                        <img src="./images/sass.svg" alt="">
+                    </li>
+                    <li class="grid_item">
+                        <img src="./images/sass.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="section -contact" id="contact">
+            <div class="section_half">
+                <div class="section_group">
+                    <h2 class="heading">Contact</h2>
+                    <p class="text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div class="contacts">
+                        <ul class="contacts_list">
+                            <li class="contacts_list-item"><a class="contacts_link" href="">GitHub</a></li>
+                            <li class="contacts_list-item"><a class="contacts_link" href="">Twitter</a></li>
+                            <li class="contacts_list-item"><a class="contacts_link" href="">Linkedin</a></li>
+                            <li class="contacts_list-item"><a class="contacts_link" href="">Medium</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="section_half">
                 <form class="form">
-                    <fieldset>
-                        <legend>Entre em contato</legend>
-                        <div class="input-group">
-                            <label>E-mail <br><input type="email"></label>
+                    <fieldset class="form_fieldset">
+                        <legend class="form_fieldset-name">Entre em contato</legend>
+                        <div class="form_group">
+                            <label class="form_label">E-mail<input class="form_input" type="email"></label>
                         </div>
-                        <div class="input-group">
-                            <label>Mensagem <br>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="form_group">
+                            <label class="form_label">Mensagem
+                                <textarea class="form_input" name="" id="" cols="30" rows="10"></textarea>
                             </label>
                         </div>
-                        <div class="input-group">
+                        <div class="form_group">
                             <input class="button" type="submit" value="Enviar">
                         </div>
                     </fieldset>
@@ -153,9 +161,25 @@
     </main>
     <footer class="footer">
         <div class="footer_half">
-            <div class="footer_logo">
-                <img src="./images/placeholder-image.png" alt="Addson Coutinho">
-            </div>
+            <a href="#" class="footer_logo">
+                <svg width="45" viewBox="0 0 1280 1061.48" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                    <linearGradient id="d" x1="1129.8" x2="211.21" y1="1094.6" y2="219.72" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#40191a" offset="0"/>
+                    <stop stop-color="#c84e51" offset="1"/>
+                    </linearGradient>
+                    <linearGradient id="c" x1="1444.2" x2="136.95" y1="1016" y2=".85" gradientTransform="matrix(1 0 0 -1 0 1280)" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#bf4a4d" offset="0"/>
+                    <stop stop-color="#c84e51" offset=".24"/>
+                    <stop stop-color="#e2585b" offset=".63"/>
+                    <stop stop-color="#ff6366" offset="1"/>
+                    </linearGradient>
+                    </defs>
+                    <title>@OAddson</title>
+                    <polygon points="1280 1061.5 909.96 1061.5 42.46 133.6" fill="url(#d)"/>
+                    <path transform="translate(0 -109.26)" d="M640,109.26h0L0,1170.74H363.91L640,109.26,910,1170.74h370Z" fill="url(#c)"/>
+                </svg> 
+            </a>
             <div class="footer_text">
                 <h4 class="footer_text-title">
                     About

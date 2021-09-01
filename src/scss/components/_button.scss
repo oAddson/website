@@ -2,10 +2,22 @@
 
 .button {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     padding: 15px 30px;
     margin-top: 35px;
+    background: $background-color-night;
+    color: $font-color-night;
     border-radius: $border-radius;
     display: inline-block;
     border: 3px solid $theme-color;
+    cursor: pointer;
+    box-shadow: -5px -5px 12px 3px rgba(#f2f2f2, 10%), 5px 5px 12px 3px rgb(#242424, 50%);
+    transition: 0.35s color cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.35s background cubic-bezier(0.18, 0.89, 0.38, 1);
+    &:hover {
+        background: linear-gradient(315deg, #242424, #3636367F );
+        color: $theme-color;
+    }
+    &:active {
+        color: $theme-color
+    }
 }

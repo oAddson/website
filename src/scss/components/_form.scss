@@ -1,0 +1,27 @@
+.form {
+    flex: 1 0 100%;
+    &_fieldset {
+        border: none;
+        &-name {
+            font: {
+                size: 32px
+            };
+        }
+    }
+    &_group {
+        // background: chartreuse;
+    }
+    &_label {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_input {
+        padding: 15px 30px;
+        color: black;
+        border: none;
+        border-radius: 35px;
+        min-height: 62px;
+        flex: 1 0 100%;
+        outline: none;
+    }    
+}

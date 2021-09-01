@@ -3,15 +3,23 @@
 .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 800px;
+    border: 1px solid;
     &_half {
         @include flex;
         align-items: center;
         margin: 0;
     }
-    
+    &_group {
+        display: grid;
+    }
+    &.-home {
+
+    }
     &.-about {
         & .section_group {
+            grid-template-rows: auto;
             margin: 0 10px;
         }
         & .heading {
@@ -20,6 +28,16 @@
         }
     }
     &.-skills {
+        text-align: center;
         grid-template-columns: 1fr;
+        & .section_group {
+            justify-content: center;
+            text-align: center;
+            align-self: center;
+            grid-template-rows: 102px 120px 550px;
+        }
+    }
+    &.-contact {
+
     }
 }
