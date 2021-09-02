@@ -11,7 +11,8 @@
 @use './components/text';
 
 // Layout
-@use './layout/navigation';
-@use './layout/header';
-@use './layout/section';
 @use './layout/container';
+@use './layout/footer';
+@use './layout/header';
+@use './layout/navigation';
+@use './layout/section';

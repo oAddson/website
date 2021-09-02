@@ -14,6 +14,7 @@
             text-align: center;
             margin-left: -10.4%;
         }
+        
     }
     &_link {
         text-decoration: none;
@@ -24,5 +25,23 @@
         letter-spacing: 1.5px;
         padding: 15px 70px;
         color: $font-color-night;
+    }
+    
+    //MODIFIER
+    &.-footer {
+        & .navigation {
+            &_list {
+                flex-wrap: wrap;
+                min-height: 200px;
+                &-item {
+                    flex: 1 0 100%;
+                    margin: 0;
+                }
+            }
+            &_link {
+                min-height: 40px;
+                margin: 0;
+            }
+        }
     }
 }

@@ -1,0 +1,41 @@
+.footer {
+    display: grid;
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        max-width: 77.5vw;
+        padding-top: 50px;
+    }
+    &_widget {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        //MODIFIER 
+        &.-about {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+    &_logo {
+        text-align: center;
+    }
+    &_text {
+        &-title {
+            font: {
+                size: 22px;
+            };
+            padding-bottom: 12px;
+        }
+    }
+    &_address {
+        font: {
+            size: 16px;
+            style: normal;
+        };
+        line-height: 1.5;
+    }
+    &_super {
+        padding-bottom: 15px;
+        text-align: center;
+    }
+}
