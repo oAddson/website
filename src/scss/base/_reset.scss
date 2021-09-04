@@ -15,6 +15,7 @@
 body {
     display: grid;
     background-color: $background-color-night;
+    overflow-x: hidden;
 }
 
 img {

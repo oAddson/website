@@ -1,3 +1,8 @@
 .text {
     max-width: 1000px;
+    
+    // MODIFIER
+    &.-contact {
+        margin-right: 100px;
+    }
 }
