@@ -6,6 +6,7 @@
     height: 100vh;
     min-height: 800px;
     border: 1px solid;
+    position: relative;
     &_half {
         @include flex;
         align-items: center;
@@ -25,6 +26,17 @@
         & .heading {
             margin-top: -100px;
             margin-bottom: 20px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translateX(-50%);
+            background-image: linear-gradient(0deg, transparent, #202020);
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
         }
     }
     &.-skills {
