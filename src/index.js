@@ -1,7 +1,7 @@
 import styles from './scss/app.scss'
+import form from './js/components/form/formHandler'
+
 
 (() => {
-    const  test = 'hello world';
-    console.log('Bem vindo ao novo projeto!!!');
-    console.log(test);
+    
 })( )

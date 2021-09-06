@@ -144,15 +144,19 @@
                     <fieldset class="form_fieldset">
                         <legend class="form_fieldset-name">Entre em contato</legend>
                         <div class="form_group">
-                            <label class="form_label">E-mail<input class="form_input" type="email"></label>
+                            <label for="name" class="form_label">Name:</label>
+                            <input required class="form_input" name="name" id="name" type="text">
                         </div>
                         <div class="form_group">
-                            <label class="form_label">Mensagem
-                                <textarea class="form_input" name="" id="" cols="30" rows="10"></textarea>
-                            </label>
+                            <label for="email" class="form_label">E-mail:</label>
+                            <input required class="form_input" name="email" id="email" type="email">
                         </div>
-                        <div class="form_group">
-                            <input class="button" type="submit" value="Enviar">
+                        <div class="form_group -textarea">
+                            <label for="message" class="form_label">Mensagem:</label>
+                            <textarea required class="form_input" name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form_group -button">
+                            <input disabled class="button -form" type="submit" value="Enviar">
                         </div>
                     </fieldset>
                 </form>

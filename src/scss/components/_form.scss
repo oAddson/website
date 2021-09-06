@@ -1,3 +1,5 @@
+@use '../abstract/' as *;
+
 .form {
     flex: 1 0 100%;
     &_fieldset {
@@ -9,19 +11,71 @@
         }
     }
     &_group {
-        // background: chartreuse;
+        position: relative;
+        height: 68px;
+        margin: 10px 0;
+        border: 3px solid transparent;
+        border-radius: 35px;
+        //MODIFIER
+        &.-textarea {  
+            min-height: 156px;            
+            & .form_input {
+                min-height: 150px;
+                padding: 25px 30px;
+            }
+        }
+        &.-button {
+            margin-top: 45px;
+        }
+        &.-selected {
+            & .form_label {
+                background: white;
+                color: #484848;
+                top: 0;
+                padding-top: 3px;
+                font: {
+                    size: 16px;
+                };
+            }
+        }
+        &.-required {
+            border-color: red;
+        }
     }
     &_label {
-        display: flex;
-        flex-wrap: wrap;
+        position: absolute;
+        top: 18px;
+        left: 30px;
+        z-index: 1;
+        font: {
+            size: 23px;
+        };
+        color: $font-color-light;
+        transition: ease-in-out .35s font, ease-in-out .35s top;
     }
     &_input {
         padding: 15px 30px;
-        color: black;
+        color: #202020;
+        font-weight: 400;
         border: none;
         border-radius: 35px;
         min-height: 62px;
         flex: 1 0 100%;
+        position: absolute;
+        width: 100%;
+        height: 62px;
         outline: none;
-    }    
+        resize: none;
+        &::-webkit-scrollbar {
+            width: 2px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-track {
+            border: none;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $theme-color;
+            border-radius: 1px;
+        }
+    }
 }
