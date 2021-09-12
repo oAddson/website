@@ -4,15 +4,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    right: -80%;
+    background: #242424;
+    width: 80vw;
+    height: 100vh;
+    z-index: 2;
+    transition: right 0.35s cubic-bezier(0.55, 0.06, 0.68, 0.19), box-shadow 0.15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    box-shadow: 0 0 0 0 #24242400;
     &_list {
         list-style: none;
         display: flex;
         justify-content: space-around;
         flex: 1 0 100%;
+        flex-flow: column;
         &-item {
             flex: 1 0;
             text-align: center;
-            margin-left: -10.4%;
+            margin: 25px 0;
         }
         
     }
@@ -25,6 +34,53 @@
         letter-spacing: 1.5px;
         padding: 15px 70px;
         color: $font-color-night;
+    }
+    &_switch {
+        appearance: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 80%27 width=%2730%27%3E%3Crect width=%27100%27 height=%2720%27 fill=%27%23F2F2F2%27%3E%3C/rect%3E%3Crect y=%2730%27 width=%27100%27 height=%2720%27 fill=%27%23F2F2F2%27%3E%3C/rect%3E%3Crect y=%2760%27 width=%27100%27 height=%2720%27 fill=%27%23F2F2F2%27%3E%3C/rect%3E%3C/svg%3E");
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: -63px;
+        top: 11px;
+        cursor: pointer;
+        padding: 20px;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        width: 50vw;
+        right: -50%;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        position: relative;
+        background: none;
+        height: auto;
+        width: auto;
+        right: auto;
+        border-left: none;
+        &_switch {
+            display: none;
+        }
+        &_list {
+            flex-flow: row;
+            &-item {
+                margin-left: -10.4%;
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        position: relative;
     }
     
     //MODIFIER
@@ -42,6 +98,14 @@
                 min-height: 40px;
                 margin: 0;
             }
+        }
+    }
+    &.-visible {
+        // Extra large devices (large desktops, 1200px and up)
+        @media (max-width: 992px) {
+            border-left: 3px solid #FF6366;
+            right: 0;
+            box-shadow: -100vw 0 0 100vw #242424bb;
         }
     }
 }

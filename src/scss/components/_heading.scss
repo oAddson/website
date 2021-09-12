@@ -1,7 +1,17 @@
+@use '../abstract/' as *;
+
 .heading {
     flex: 1 0 100%;
     font: {
         weight: 100;
-        size: 51px;
+        size: clamp(30.5px, 10vw, 41px);
+    }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        font: {
+            weight: 100;
+            size: clamp(41px, 7vw, 51px);
+        }
     }
 }

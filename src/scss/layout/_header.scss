@@ -2,16 +2,49 @@
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    background-color: $background-color-night;
-    min-height: 75px;
-    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    background: #242424;
+
     &_logo {
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-self: left;
         &-link {
             padding: 10px 28px;
         }
     }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        
+    }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        background: none;
+        position: relative;
+        width: auto;
+        &_logo {
+            justify-self: auto;
+        }
+    }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 3fr;
+        background-color: $background-color-night;
+        min-height: 75px;
+        max-width: 100vw;
+        z-index: 1;
+    }
+    
+    
 }

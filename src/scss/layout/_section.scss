@@ -2,23 +2,49 @@
 
 .section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    min-height: 800px;
+    grid-template-columns: 1fr;
     position: relative;
     &_half {
         @include flex;
         align-items: center;
         margin: 0;
+        order: 0;
     }
     &_group {
         display: grid;
     }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        
+    }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        min-height: 800px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        
+    }
+
     //MODIFIERS
+    &.-home {
+        
+    }
     &.-about {
         & .section_group {
-            grid-template-rows: 102px auto auto;
-            margin: 0 10px;
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                grid-template-rows: 102px auto auto;
+                margin: 0 10px;
+            }
         }
         &::before {
             content: '';
@@ -34,18 +60,27 @@
         }
     }
     &.-skills {
-        text-align: center;
+        text-align: left;
         grid-template-columns: 1fr;
         & .section_group {
-            justify-content: center;
-            text-align: center;
-            align-self: center;
-            grid-template-rows: 102px 120px 550px;
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                text-align: center;
+            }
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                justify-content: center;
+                align-self: center;
+                grid-template-rows: 102px 120px 550px;
+            } 
         }
     }
     &.-contact {
         & .section_group {
-            grid-template-rows: 102px auto 1fr;
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                grid-template-rows: 102px auto 1fr;
+            }
         }
     }
 }

@@ -1,8 +1,13 @@
 .text {
     max-width: 1000px;
-    
+    font: {
+        size: clamp(14.55px, 1vw, 16px);
+    };
     // MODIFIER
     &.-contact {
-        margin-right: 100px;
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            margin-right: 100px;
+        }
     }
 }

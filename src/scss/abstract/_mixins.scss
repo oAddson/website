@@ -2,3 +2,7 @@
     display: flex;
     flex-wrap: wrap;    
 }
+
+@mixin fluid-type($min, $max, $breakpoint-min, $breakpoint-max) {  
+    font-size: ($max / $min) * 1px;
+}

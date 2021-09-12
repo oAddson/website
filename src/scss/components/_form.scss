@@ -6,7 +6,7 @@
         border: none;
         &-name {
             font: {
-                size: 32px
+                size: clamp(27px, 2vw, 32px)
             };
         }
     }

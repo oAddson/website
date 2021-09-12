@@ -3,7 +3,7 @@
 .button {
     justify-self: left;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
     padding: 15px 30px;
     margin-top: 35px;
     background: $background-color-night;
@@ -22,6 +22,10 @@
         color: $theme-color
     }
 
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        font-size: 22px;
+    }
     //MODIFIER
     &.-form {
         margin: 0;

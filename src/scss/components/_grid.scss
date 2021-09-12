@@ -2,11 +2,11 @@
 
 .grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-self: center;
-    max-width: 750px;
     gap: 30px;
+    margin: 50px 0;
     
     &_item {
         display: flex;
@@ -15,5 +15,26 @@
         border-radius: $border-radius;
         padding: 20px;
         box-shadow: -15px -15px 12px 3px rgb(#282828, 100%), 15px 15px 12px 3px rgb(#202020, 100%);
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        max-width: 750px;
+        margin: 0;
+    }
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        
     }
 }
