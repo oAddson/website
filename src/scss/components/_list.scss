@@ -1,6 +1,9 @@
 .list {
-    margin-right: 35px;
-    margin-left: 80px;
+    margin: 0 35px;
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        margin-left: 50px;
+    }
     &_item {
         margin: 15px 0;
     }

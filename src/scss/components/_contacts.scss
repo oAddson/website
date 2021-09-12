@@ -1,7 +1,10 @@
 .contacts {
     &_list {
-        margin-left: 80px;
-        margin-top: 20px;
+        margin: 0 35px;
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        margin-left: 50px;
+    }
         &-item {
             margin: 10px 0;
         }

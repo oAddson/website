@@ -2,6 +2,11 @@
 
 .form {
     flex: 1 0 100%;
+    margin-top: 75px;
+    // Large devices (desktops, 992px and up)
+     @media (min-width: 992px) {
+        margin-top: 0;
+    }
     &_fieldset {
         border: none;
         &-name {

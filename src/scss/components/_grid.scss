@@ -13,6 +13,8 @@
         justify-content: center;
         align-items: center;
         border-radius: $border-radius;
+        max-width: 230px;
+        max-height: 260px;
         padding: 20px;
         box-shadow: -15px -15px 12px 3px rgb(#282828, 100%), 15px 15px 12px 3px rgb(#202020, 100%);
     }
@@ -31,10 +33,9 @@
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         max-width: 750px;
-        margin: 0;
     }
     // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-        
+        margin: 0;
     }
 }
