@@ -6,16 +6,12 @@
         weight: 100;
         size: clamp(30.5px, 10vw, 41px);
     }
-    margin: 25px 0;
+    margin: 0;
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {
         font: {
             weight: 100;
             size: clamp(41px, 7vw, 51px);
         }
-    }
-    // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) {
-        margin: 0;
     }
 }
