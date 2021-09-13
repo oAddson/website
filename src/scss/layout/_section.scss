@@ -36,7 +36,12 @@
     
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-        
+        &_half {
+            // MODIFIER
+            &.-image {
+                height: auto;
+            }
+        }
     }
     
     // Large devices (desktops, 992px and up)
@@ -51,9 +56,6 @@
     }
 
     //MODIFIERS
-    // &.-home {
-        
-    // }
     &.-about {
         & .section_group {
             // Extra large devices (large desktops, 1200px and up)
@@ -79,8 +81,8 @@
         text-align: left;
         grid-template-columns: 1fr;
         & .section_group {
-            // Large devices (desktops, 992px and up)
-            @media (min-width: 992px) {
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
                 text-align: center;
             }
             // Extra large devices (large desktops, 1200px and up)

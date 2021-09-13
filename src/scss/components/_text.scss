@@ -3,10 +3,17 @@
     font: {
         size: clamp(14.55px, 1vw, 16px);
     };
-    // MODIFIER
-    &.-contact {
-        // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) {
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        font: {
+            size: 16px;
+        };
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        // MODIFIER
+        &.-contact {
             margin-right: 100px;
         }
     }
