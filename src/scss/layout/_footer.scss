@@ -1,23 +1,20 @@
 .footer {
-    display: none;
+    display: grid;
+
     &_container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-self: center;
-        max-width: 77.5vw;
-        padding-top: 50px;
+        padding: 50px 20px 0 20px;
+        gap: 25px;
     }
     &_widget {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-
-        //MODIFIER 
-        &.-about {
-            grid-template-columns: 1fr 2fr;
-        }
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
-    &_logo {
-        text-align: center;
+    &_menu {
+        order: 2;
     }
     &_text {
         &-title {
@@ -35,7 +32,52 @@
         line-height: 1.5;
     }
     &_super {
-        padding-bottom: 15px;
+        padding: 15px 20px;
         text-align: center;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        &_container {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        &_widget {
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            //MODIFIER 
+            &.-about {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+        &_super {
+            padding-bottom: 15px;
+        }
+        &_menu {
+            order: 0;
+        }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        &_container {            
+            gap: 0;
+        }
+        &_widget {
+            grid-template-columns: 2fr 1fr;
+
+            //MODIFIER 
+            &.-about {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        &_container {
+            padding: 0;
+            max-width: 77.5vw;
+        }
     }
 }

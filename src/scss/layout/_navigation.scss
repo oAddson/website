@@ -87,6 +87,10 @@
     
     //MODIFIER
     &.-footer {
+        position: relative;
+        width: auto;
+        height: auto;
+        right: 0;
         & .navigation {
             &_list {
                 flex-wrap: wrap;
@@ -94,11 +98,26 @@
                 &-item {
                     flex: 1 0 100%;
                     margin: 0;
+                    text-align: left;
                 }
             }
             &_link {
                 min-height: 40px;
                 margin: 0;
+                padding-left: 0;
+            }
+        }
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) {
+            & .navigation {
+                &_list {
+                    &-item {
+                        text-align: center;
+                    }
+                }
+                &_link {
+                    padding-left: 70px;
+                }
             }
         }
     }
