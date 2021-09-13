@@ -10,7 +10,7 @@
     width: 80vw;
     height: 100vh;
     z-index: 2;
-    transition: right 0.35s cubic-bezier(0.55, 0.06, 0.68, 0.19), box-shadow 0.15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    transition: right 0.35s cubic-bezier(0.55, 0.06, 0.68, 0.19), box-shadow 0.15s cubic-bezier(0.55, 0.06, 0.68, 0.19), border-left 0.15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
     box-shadow: 0 0 0 0 #24242400;
     &_list {
         list-style: none;
@@ -72,15 +72,17 @@
         }
         &_list {
             flex-flow: row;
-            &-item {
-                margin-left: -10.4%;
-            }
         }
     }
 
     // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
         position: relative;
+        &_list {
+            &-item {
+                margin-left: -10%;
+            }
+        }
     }
     
     //MODIFIER
