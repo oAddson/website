@@ -19,7 +19,7 @@ form.addEventListener('submit', e => {
 const listenIn = e => {
     e.target.parentElement.classList.add('-selected');
     e.target.addEventListener('focusout', listenOut);
-    if(e.target.required && !e.target.value) {
+    if(e.target.required && !e.target.validity.valid) {
         count--;
     }
 }
@@ -46,6 +46,7 @@ const listenOut = e => {
     } else {
         submitButton.disabled = false;
     }
+    console.log(count);
 }
 
 const controlInputs = e => {
