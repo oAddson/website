@@ -27,8 +27,14 @@ const listenIn = e => {
 const listenOut = e => {
     const {classList} = e.target.parentElement;
     const submitButton = form.querySelector('input[type=submit]');
+    if(count > 1) {
+        submitButton.disabled = true;
+    } else {
+        submitButton.disabled = false;
+    }
     if(!e.target.validity.valid) {
         invalid(e)
+        submitButton.disabled = true;
         classList.remove('-valid');
         e.target.removeEventListener('focusout', listenOut)
         e.target.removeEventListener('keypressed', controlInputs)
@@ -40,11 +46,6 @@ const listenOut = e => {
         classList.remove('-invalid');
         classList.add('-valid');
         e.target.parentElement.querySelector('.form_group-message').innerText = '';
-    }
-    if(count > 1) {
-        submitButton.disabled = true;
-    } else {
-        submitButton.disabled = false;
     }
     console.log(count);
 }
