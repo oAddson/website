@@ -6,12 +6,11 @@
     align-items: center;
     position: fixed;
     right: -100vw;
-    background: #242424;
+    background: #202020;
     width: 100vw;
     height: 100vh;
     z-index: 2;
     transition: right 0.35s cubic-bezier(0.55, 0.06, 0.68, 0.19), box-shadow 0.15s cubic-bezier(0.55, 0.06, 0.68, 0.19);
-    box-shadow: 0 0 0 0 #24242400;
     &_list {
         list-style: none;
         display: flex;
@@ -119,7 +118,6 @@
         // Extra large devices (large desktops, 1200px and up)
         @media (max-width: 992px) {
             right: 0;
-            box-shadow: -100vw 0 0 100vw #242424bb;
         }
     }
 }

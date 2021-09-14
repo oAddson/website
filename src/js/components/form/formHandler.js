@@ -25,19 +25,26 @@ const listenIn = e => {
 }
 
 const listenOut = e => {
-    if(!e.target.value) {
-        e.target.parentElement.classList.remove('-selected');
+    const {classList} = e.target.parentElement;
+    const submitButton = form.querySelector('input[type=submit]');
+    if(!e.target.validity.valid) {
+        invalid(e)
+        classList.remove('-valid');
         e.target.removeEventListener('focusout', listenOut)
         e.target.removeEventListener('keypressed', controlInputs)
         if(e.target.required) {
             count++;
-            e.target.parentElement.classList.add('-required');
+            classList.add('-invalid');
         }
+    } else {
+        classList.remove('-invalid');
+        classList.add('-valid');
+        e.target.parentElement.querySelector('.form_group-message').innerText = '';
     }
     if(count > 1) {
-        form.querySelector('input[type=submit]').disabled = true;
+        submitButton.disabled = true;
     } else {
-        form.querySelector('input[type=submit]').disabled = false;
+        submitButton.disabled = false;
     }
 }
 
@@ -55,6 +62,16 @@ formGroups.forEach(group => {
     }
 })
 
-
+const invalid = e => {
+    const {validity} = e.target;
+    const errorMessage = e.target.parentElement.querySelector('.form_group-message');
+    if(validity.valueMissing) {
+        errorMessage.innerText = 'Não pode ser vazio';
+        e.target.parentElement.classList.remove('-selected');
+    }
+    if(validity.typeMismatch && e.target.type === "email") {
+        errorMessage.innerText = 'E-mail não é valido';
+    }
+}
 
 export default { form, formGroups };
