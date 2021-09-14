@@ -33,6 +33,13 @@
         letter-spacing: 1.5px;
         padding: 15px 70px;
         color: $font-color-night;
+
+        &:hover {
+            color: $theme-color;
+        }
+        &:active {
+            color: $theme-color
+        }
     }
     &_switch {
         appearance: none;

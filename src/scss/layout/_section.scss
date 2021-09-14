@@ -5,6 +5,7 @@
     grid-template-columns: 1fr;
     position: relative;
     min-height: 88vh;
+    padding-top: 80px;
     &_half {
         @include flex;
         align-items: center;
@@ -48,6 +49,7 @@
     @media (min-width: 992px) {
         min-height: 630px;
         grid-template-columns: 1fr 1fr;
+        padding-top: 0;
     }
     
     // Extra large devices (large desktops, 1200px and up)
