@@ -1,0 +1,32 @@
+.preloader {
+    position: fixed;
+    z-index: 2;
+    background: #242424;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-content: center;
+    opacity: 1;
+    transition: .5s opacity ease-in;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.preloader svg {
+    width: 100%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotateZ(1deg);
+    }
+    50% {
+        transform: rotateZ(180deg);  
+    }
+    100% {
+        transform: rotateZ(359deg);
+    }
+}
