@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
         method: "POST",
         body: JSON.stringify(inputs)
     }
-    fetch('', options)
+    fetch('.', options)
         .then(res => res.json)
         .then(data => console.log(data))
 })
@@ -27,10 +27,11 @@ const listenIn = e => {
 const listenOut = e => {
     const {classList} = e.target.parentElement;
     const submitButton = form.querySelector('input[type=submit]');
-    if(count > 1) {
+    if(count > 0) {
         submitButton.disabled = true;
     } else {
         submitButton.disabled = false;
+        submitButton.focus();
     }
     if(!e.target.validity.valid) {
         invalid(e)
